@@ -1,0 +1,42 @@
+<!-- register.component.html -->
+<div class="container">
+  <h2>Register</h2>
+  <form (ngSubmit)="onSubmit()">
+    <input
+      type="text"
+      [(ngModel)]="user.name"
+      name="name"
+      placeholder="Name"
+      class="form-control mb-2"
+    />
+    <input
+      type="email"
+      [(ngModel)]="user.email"
+      name="email"
+      placeholder="Email"
+      class="form-control mb-2"
+    />
+    <input
+      type="text"
+      [(ngModel)]="user.mobile"
+      name="mobile"
+      placeholder="Mobile"
+      class="form-control mb-2"
+    />
+    <input
+      type="password"
+      [(ngModel)]="user.password"
+      name="password"
+      placeholder="Password"
+      class="form-control mb-2"
+    />
+    <input
+      type="password"
+      [(ngModel)]="user.confirmPassword"
+      name="confirmPassword"
+      placeholder="Confirm Password"
+      class="form-control mb-2"
+    />
+    <button class="btn btn-primary">Register</button>
+  </form>
+</div>
